@@ -1,0 +1,61 @@
+<!--ChatGPTに一部頼って作成。説明等は考えています。-->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gitのメモ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      color: #333;
+    }
+    h1 {
+      border-left: 6px solid #19191a;
+      padding-left: 10px;
+    }
+    .line {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fafafa;
+    }
+    .command {
+      background: #b9b8b8;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-family: monospace;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gitのメモ</h1>
+
+  <div class="line">
+    <h2>基本</h2>
+    <p><span class="command">git init</span> … 新しいリポジトリを作成するコマンド。</p>
+    <p><span class="command">git add .</span> … 今いるフォルダのすべてのファイルをgitに追加する（ステージする）コマンド。</p>
+    <p><span class="command">git add "ファイル名"</span> … 指定のファイル名をgitに追加する（ステージする）コマンド。</p>
+    <p><span class="command">git commit -m "メッセージ"</span> … 追加した（ステージした）ファイルを、確定させる（コミットする）コマンド。</p>
+    <p><span class="command">git push</span> … リモート（github.com等）に上げるコマンド。</p>
+    <p><span class="command">git push -f </span> … リモート（github.com等）に強制的に上げるコマンド。（コミットの内容によっては、-fを付けないとできない場合がある。）</p>
+    <p><span class="command">git pull</span> … リモート（github.com等）のやつをローカルに反映させるコマンド。</p>
+    <p><span class>
+  </div>
+
+  <div class="line">
+    <h2>よく使うコマンド（※練習中）</h2>
+    <p><span class="command">git checkout ブランチ名</span> … ブランチを切り替えるコマンド。</p>
+    <p><span class="command">git rebase -i コミットID</span> … コミットを修正するときに使うコマンド。（コミットを統合させる、コミットメッセージを編集などがある。）</p>
+    <p><span class="command">git stash</span> … 今変更している内容を、一時的に避難させるコマンド。（どこかでも変更してると、一部コマンドが使えない。）</p>
+    <p><span class="command">git stash pop</span> … stashしたコマンドを、ローカルに反映させるコマンド。</p>
+    <p><span class>
+  </div>
+
+</body>
+</html>
